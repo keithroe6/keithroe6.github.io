@@ -1,0 +1,197 @@
+/* Import fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap');
+
+/* set font-family and page colors */
+* { font-family: 'Golos Text', sans-serif;
+    margin: 0;
+    padding: 0;
+    --backgroundcolor: #57a8ea;
+    --bordercolor: #0f0f0f;
+    --accentcolor: #6e0404;
+    --textcolor: #e9eaf6;
+    --transbackground: #57a8ea88;
+
+}
+
+/* Background image of protractor */
+
+body {
+    background-image: url(./Images/andrea-sonda-nw2H5tAhR4I-unsplash\ Medium.png);
+    background-size: cover;
+}
+
+/*  This padding is to place rose image correctly */
+img {
+    padding-right: 5em;   
+    width: 50%;
+    height: 100%; 
+}
+
+
+/* Locate and space the navbar links. Also give background and colors */
+
+.navbar ul {
+list-style: none;
+display: flex; 
+justify-content: space-between;
+font-size: 1.875em;
+background: linear-gradient(45deg, var(--backgroundcolor), var(--bordercolor));
+height: 12vh;
+width: auto;
+border: .1em solid var(--bordercolor);
+}
+
+@media (max-width: 800px) { 
+    .navbar ul {
+        list-style: none;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 1;
+        font-size: 1em;
+        background: linear-gradient(45deg, var(--backgroundcolor), var(--bordercolor));
+        height: 10vh;
+        width: auto;
+        border: .1em solid var(--bordercolor);
+        }
+
+    li img {
+        width: 0em;
+        height: 0em;
+    }
+}
+
+/* Putting sidebar and centerpage into flexbox together*/
+
+.container div .project-side-bar {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 25vw;
+    height: 10vh;
+
+
+}
+
+/* style the sidebar to make a list of projects */
+
+.project-side-bar ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.875em;
+    background: linear-gradient(45deg, var(--bordercolor), var(--backgroundcolor));
+    height: 14vh;
+    width: 24vw;
+    border: .1em solid var(--bordercolor);
+    text-decoration-color: var(--accentcolor)
+}
+
+@media (max-width: 800px){
+    .project-side-bar ul li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1em;
+        background: linear-gradient(45deg, var(--bordercolor), var(--backgroundcolor));
+        height: 14vh;
+        width: 24vw;
+        border: .1em solid var(--bordercolor);
+        text-decoration-color: var(--accentcolor)
+    }
+}
+
+
+
+/* targeting centerpiece "hero" quote thing. */
+
+.centerpage {
+   width: 80%;
+   height: 100%;
+   position: absolute;
+   top: 13%;
+   left: 24%;
+   font-size: 5em;
+   padding: 1em;
+   background-color: var(--transbackground);
+   color: var(--textcolor);
+}
+
+.centerpage h1 {
+    font-family: 'Apple Chancery', 'Lucida Calligraphy', 'Comic Sans MS', 'Brush Script MT', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    font-size: 1.5em;
+}
+
+@media (max-width: 800px){
+    .centerpage {
+        position: absolute;
+        top: 13%;
+        left: 24%;
+        font-size: 2.5em;
+        padding: 1%; 
+        background-color: var(--transbackground);
+        color: var(--textcolor);
+     }
+     
+     .centerpage h1 {
+        font-family: 'Apple Chancery', 'Lucida Calligraphy', 'Comic Sans MS', 'Brush Script MT', cursive;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly; 
+         font-size: .5em;
+         word-wrap: break-word;
+     }
+}
+
+i[class="fa-brands fa-html5"] {
+    color: #E44D26;
+}
+
+i[class="fa-brands fa-css3"] {
+    color: #264de4;
+}
+
+i[class="fa-brands fa-square-js"] {
+    color: #f7df1e;
+}
+
+i[class="fa-brands fa-python"] {
+    color: #646464;
+}
+.centerpage h2 {
+    font-size: .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+ @media (max-width: 800) {
+    .centerpage h2 {
+        font-size: .1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+ }
+
+/* Styling the links */
+a {
+    color: var(--textcolor);
+    text-decoration: none;
+}
+ 
+p {
+    text-align: center;
+    font-size: 2em;
+}
+ 
+footer {
+    text-align: center;
+    background: linear-gradient(45deg, var(--bordercolor), var(--backgroundcolor));
+    color: var(--textcolor);
+}
